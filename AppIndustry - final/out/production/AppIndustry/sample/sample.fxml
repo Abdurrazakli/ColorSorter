@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="600.0" maxWidth="800.0" minHeight="400" minWidth="600" prefHeight="600.0" prefWidth="792.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane fx:id="bigAncorPane" prefHeight="600.0" prefWidth="800.0">
+         <children>
+            <Pane fx:id="paneRed" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: RED;">
+               <children>
+                  <TextField fx:id="Red_textField" alignment="CENTER" editable="false" layoutX="26.0" layoutY="100.0" prefHeight="32.0" prefWidth="149.0" text="0">
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                  </TextField>
+                  <Text fill="WHITE" layoutX="38.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="QIRMIZI" textAlignment="CENTER">
+                     <font>
+                        <Font name="Times New Roman Bold" size="29.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane fx:id="paneBlue" layoutX="200.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: BLUE;">
+               <children>
+                  <Text fill="WHITE" layoutX="60.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MAVI" textAlignment="CENTER">
+                     <font>
+                        <Font name="Times New Roman Bold" size="29.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="Blue_textField" alignment="CENTER" editable="false" layoutX="26.0" layoutY="100.0" prefHeight="32.0" prefWidth="149.0" text="0">
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </Pane>
+            <Pane fx:id="paneGreen" layoutX="400.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: GREEN;">
+               <children>
+                  <Text fill="WHITE" layoutX="56.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="YAŞIL" textAlignment="CENTER">
+                     <font>
+                        <Font name="Times New Roman Bold" size="29.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="Green_textField" alignment="CENTER" editable="false" layoutX="26.0" layoutY="100.0" prefHeight="32.0" prefWidth="149.0" text="0">
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </Pane>
+            <Pane fx:id="PaneYellow" layoutX="600.0" layoutY="-1.0" prefHeight="207.0" prefWidth="200.0" style="-fx-background-color: YELLOW;">
+               <children>
+                  <Text fill="WHITE" layoutX="65.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SARI" textAlignment="CENTER">
+                     <font>
+                        <Font name="Times New Roman Bold" size="29.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="Yellow_textField" alignment="CENTER" editable="false" layoutX="26.0" layoutY="100.0" prefHeight="32.0" prefWidth="149.0" text="0">
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </Pane>
+            <Pane layoutY="200.0" prefHeight="200.0" prefWidth="400.0" style="-fx-background-color: #f8c471;">
+               <children>
+                  <Text fill="#3f1aa4" layoutX="14.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TEMPERATUR:">
+                     <font>
+                        <Font name="Times New Roman Bold Italic" size="32.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="temperatur_textField" alignment="CENTER" editable="false" layoutX="317.0" layoutY="14.0" prefHeight="39.0" prefWidth="69.0" text="0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </Pane>
+            <Pane layoutX="400.0" layoutY="200.0" prefHeight="200.0" prefWidth="400.0" style="-fx-background-color: #f8c471;">
+               <children>
+                  <Text fx:id="rutubet_text" fill="#3f1aa4" layoutX="14.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RÜTUBƏTLİLİK:">
+                     <font>
+                        <Font name="Times New Roman Bold Italic" size="32.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="rutubet_textField" alignment="TOP_CENTER" editable="false" layoutX="317.0" layoutY="13.0" prefHeight="39.0" prefWidth="69.0" text="0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </Pane>
+            <Pane accessibleText=" " layoutX="570.0" layoutY="400.0" prefHeight="200.0" prefWidth="220.0">
+               <children>
+                  <Button fx:id="btn_Stop" disable="true" layoutX="109.0" layoutY="17.0" mnemonicParsing="false" onAction="#stop" style="-fx-background-color: #FF0000;" text="Dayandır" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman Bold Italic" size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn_Start" contentDisplay="CENTER" disable="true" layoutX="3.0" layoutY="17.0" mnemonicParsing="false" onAction="#start" style="-fx-background-color: #ADFF2F;" text="Başlat" textAlignment="JUSTIFY" textOverrun="CLIP">
+                     <font>
+                        <Font name="Times New Roman Bold Italic" size="20.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="buttons_info_textField" editable="false" layoutX="5.0" layoutY="68.0" prefHeight="37.0" prefWidth="209.0" text="İlkin vəziyyət">
+                     <font>
+                        <Font name="Times New Roman Bold Italic" size="20.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="btn_restart" disable="true" layoutX="5.0" layoutY="116.0" mnemonicParsing="false" onAction="#setBtn_restart" text="Sıfırla">
+                     <font>
+                        <Font name="Times New Roman Bold Italic" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane layoutY="400.0" prefHeight="200.0" prefWidth="380.0">
+               <children>
+                  <Button fx:id="closePortButton" disable="true" layoutX="294.0" layoutY="16.0" mnemonicParsing="false" onAction="#closePort" text="Portu bağla" />
+                  <Button fx:id="refreshButton" layoutX="181.0" layoutY="16.0" mnemonicParsing="false" onAction="#detectPort" text="Portu yenilə" />
+                  <Button fx:id="selectPortButton" layoutX="181.0" layoutY="62.0" mnemonicParsing="false" onAction="#getChoice" prefHeight="25.0" prefWidth="98.0" text="Portu seç" />
+                  <Button fx:id="startButton" disable="true" layoutX="294.0" layoutY="62.0" mnemonicParsing="false" onAction="#connect" prefHeight="25.0" prefWidth="98.0" text="Əlaqə qur" />
+                  <ChoiceBox fx:id="listofport" layoutX="14.0" layoutY="16.0" prefWidth="150.0" />
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
